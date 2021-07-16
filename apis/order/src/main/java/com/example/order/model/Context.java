@@ -14,11 +14,25 @@ public class Context implements Serializable {
     @JsonProperty("process_id")
     private String processId;
 
+    @JsonProperty("request_parameter")
+    private DomainModel domainModel;
+
+    @JsonProperty("domain_model")
+    private RequestParameter requestParameter;
+
     public String getProcessId() {
         return processId;
     }
 
     public void setProcessId(String processId) {
         this.processId = processId;
+    }
+
+    public DomainModel getDomainModel() {
+        return domainModel;
+    }
+
+    public RequestParameter getRequestParameter() {
+        return requestParameter;
     }
 }
